@@ -1,16 +1,27 @@
 package ua.kharkiv.nure.dorozhan.musicmessanger.models;
 
 public class Song {
-    private int songId;
+    private long id;
     private String title;
-    private int userId;
+    private String album;
+    private String performer;
 
-    public int getSongId() {
-        return songId;
+    public Song() {
     }
 
-    public void setSongId(int songId) {
-        this.songId = songId;
+    public Song(long id, String title, String album, String performer) {
+        this.id = id;
+        this.title = title;
+        this.album = album;
+        this.performer = performer;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -21,11 +32,19 @@ public class Song {
         this.title = title;
     }
 
-    public int getUserId() {
-        return userId;
+    public String getPerformer() {
+        return performer;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setPerformer(String performer) {
+        this.performer = performer;
+    }
+
+    public String getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(String album) {
+        this.album = album;
     }
 }

@@ -9,7 +9,6 @@ public class User {
     private double longitude;
 
     public User () {
-
     }
 
     public User(String userId, String username, String email, String photoUrl) {

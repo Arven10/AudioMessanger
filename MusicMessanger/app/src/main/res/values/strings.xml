@@ -9,4 +9,6 @@
 
     <string name="getListOfPeople">Get list of people</string>
     <string name="title_activity_map">Map</string>
+
+    <string name="SongNotification">AudioMessenger playing</string>
 </resources>

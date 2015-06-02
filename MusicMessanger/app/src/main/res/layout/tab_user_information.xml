@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userPanel">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/UserTextInfoColor"
+                android:background="@color/UserInfoColor" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/UserTextInfoColor"
+                android:background="@color/UserInfoColor" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/googleMap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        tools:layout="@layout/abc_search_view"
+        android:layout_below="@id/userPanel"
+        android:layout_above="@+id/latlongLocation" />
+
+    <TextView
+        android:id="@+id/latlongLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:background="@color/UserInfoColor"
+        android:textColor="@color/UserTextInfoColor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

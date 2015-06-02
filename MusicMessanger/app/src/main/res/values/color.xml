@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#ffb06555</color>
+    <color name="tabsScrollColor">#8a140e</color>
+
+    <color name="UserInfoColor">#FE8C6A</color>
+    <color name="UserTextInfoColor">#FF41404A</color>
+
+    <color name="MenuPanelColor">#787997</color>
+    <color name="SongTextTitleColor">#DEC9C6</color>
+</resources>
